@@ -2,19 +2,23 @@
 #include <cmath>
 int main(){
 setlocale (LC_ALL, "rus");    
-double A, K, D, C, S, x, y;
+double A, K, D, C, B, Y, x, p, h;
 std::cout <<"Введите значение числа K"<< std::endl;
 std::cin >>K;
 std::cout <<"Введите значение числа C"<< std::endl;
 std::cin >>C;
+std::cout <<"Введите значение числа D"<< std::endl;
+std::cin >>D;
+std::cout <<"Введите значение числа p"<< std::endl;
+std::cin >>p;
 std::cout <<"Введите значение числа x"<< std::endl;
 std::cin >>x;
-std::cout <<"Введите значение числа y"<< std::endl;
-std::cin >>y;
-A = x + y;
-D = fabs(C - A);
-S = (10.1 + (A / C) + (D / (K * K)));
-std::cout <<S<< std::endl;
+std::cout <<"Введите значение числа h"<< std::endl;
+std::cin >>h;
+A = x - p;
+B = log(h);
+Y = ((0.78 * B) + ((A * A * A) / (K * C * D)));
+std::cout <<Y<< std::endl;
 return 0;
 }
 
