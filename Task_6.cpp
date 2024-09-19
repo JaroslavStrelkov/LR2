@@ -2,15 +2,19 @@
 #include <cmath>
 int main(){
 setlocale (LC_ALL, "rus");    
-double S, A, D, b, x;
-std::cout <<"Введите значение числа D"<< std::endl;
-std::cin >>D;
+double A, K, D, Y, n, m, x;
+std::cout <<"Введите значение числа K"<< std::endl;
+std::cin >>K;
 std::cout <<"Введите значение числа x"<< std::endl;
 std::cin >>x;
-b = x + D;
-A = (D * x) / b;
-S = (A * A + b * cos(x))/(D * D * D + (A + D - b));
-std::cout <<S<< std::endl;
+std::cout <<"Введите значение числа n"<< std::endl;
+std::cin >>n;
+std::cout <<"Введите значение числа m"<< std::endl;
+std::cin >>m;
+A = fabs(n + m);
+D = tan(x);
+Y = (1.29 + (K / A) + (D * D));
+std::cout <<Y<< std::endl;
 return 0;
 }
 
